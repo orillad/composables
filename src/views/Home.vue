@@ -6,7 +6,7 @@
 <script setup>
 import PostCard from "../components/PostCard.vue";
 // import usePost from "../composables/usePost";
-import allUse from "../composables/allUse"
-const {posts, fetchAllPosts} = allUse()
+import useAll from "../composables/useAll"
+const {posts, fetchAllPosts} = useAll()
 fetchAllPosts()
 </script>

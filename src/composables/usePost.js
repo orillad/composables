@@ -4,7 +4,6 @@ export default function usePost(){
     const post = ref(null)
     const url = 'https://jsonplaceholder.typicode.com/posts'
 
-    // 2 per tal d'obtenir el json d'una api hem de fer servir la funció fetch
     const fetchAll=async ()=>{
         const response = await fetch(url)
         posts.value = await response.json()

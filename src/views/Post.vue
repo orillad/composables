@@ -9,7 +9,7 @@
 import { useRoute } from 'vue-router';
 // import usePost from '../composables/usePost';
 // import useUser from '../composables/useUser';
-import allUse from '../composables/allUse';
+import useApi from '../composables/useAll';
 
 // const {post, fetchOne} = usePost()
 // const {user, fetchOne: fetchUser} = useUser()
@@ -17,7 +17,7 @@ const route = useRoute();
 
 
 
-const {post, fetchPost, user, fetchUser  } = allUse()
+const {post, fetchPost, user, fetchUser  } = useApi()
 
 const postId = route.params.id; 
 
